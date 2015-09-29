@@ -70,28 +70,28 @@ namespace tables {
 			}
 			if (boost::starts_with(line, "BIOS Revision")) {
 				vector<string> all;
-				boost::split(all, line, boost::is_any_of(" "));
+				boost::split(all, line, boost::is_any_of(":"));
 				string name = all[1];
 				boost::trim(name);
 				r["BIOS Revision"] = name;
 			}
 			if (boost::starts_with(line, "Firmware Revision")) {
 				vector<string> all;
-				boost::split(all, line, boost::is_any_of(" "));
+				boost::split(all, line, boost::is_any_of(":"));
 				string name = all[1];
 				boost::trim(name);
 				r["Firmware Revision"] = name;
 			}
 			if (boost::starts_with(line, "Release Date")) {
 				vector<string> all;
-				boost::split(all, line, boost::is_any_of(" "));
+				boost::split(all, line, boost::is_any_of(":"));
 				string name = all[1];
 				boost::trim(name);
 				r["Release Date"] = name;
 			}
 			if (boost::starts_with(line, "ROM Size")) {
 				vector<string> all;
-				boost::split(all, line, boost::is_any_of(" "));
+				boost::split(all, line, boost::is_any_of(":"));
 				string name = all[1];
 				boost::trim(name);
 				r["ROM Size"] = name;
