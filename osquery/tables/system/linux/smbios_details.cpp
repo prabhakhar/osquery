@@ -13,6 +13,15 @@
 #include <osquery/logger.h>
 #include <osquery/tables.h>
 
+#include <iostream>
+#include <string>
+#include <stdio.h>
+#include <sstream>
+#include <boost/algorithm/string.hpp>
+#include <boost/algorithm/string/trim.hpp>
+#include <boost/algorithm/string/predicate.hpp>
+#include <vector>
+
 using namespace std;
 
 namespace osquery {
