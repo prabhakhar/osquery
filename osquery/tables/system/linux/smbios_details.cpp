@@ -13,7 +13,7 @@
 #include <osquery/logger.h>
 #include <osquery/tables.h>
 
-use namespace std;
+using namespace std;
 
 namespace osquery {
 namespace tables {
