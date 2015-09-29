@@ -1,0 +1,15 @@
+table_name("smbios_details")
+
+description("System BIOS table details in human readable form")
+
+schema([
+	Column("SMBIOS", TEXT, "SMBIOS version")
+	Column("Vendor", TEXT, "Vendor")
+	Column("BIOS Version", TEXT, "BIOS version")
+	Column("BIOS Revision", TEXT, "BIOS Revision")
+	Column("Firmware Revision", TEXT, "Firmware revision")
+	Column("Release Date", TEXT, "Release date")
+	Column("ROM Size", TEXT, "ROM size")
+])
+
+implementation("system/smbios_details@genSMBIOSDetails")

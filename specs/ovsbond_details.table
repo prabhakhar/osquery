@@ -1,0 +1,11 @@
+table_name("ovsbond_details")
+
+schema([
+    Column("Name", TEXT, "ovs bond name"),
+    Column("Status", TEXT, "ovs bond status"),
+    Column("Mode", TEXT, "OVS bond_mode"),
+    Column("Slaves", TEXT, "Slaves for the bond"),
+    Column("SysId", TEXT, "sys_id for the bond"),
+])
+
+implementation("ovs_bond@genOvsBondDetails")
