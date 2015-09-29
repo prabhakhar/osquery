@@ -13,6 +13,14 @@
 #include <osquery/logger.h>
 #include <osquery/tables.h>
 
+#include <iostream>
+#include <string>
+#include <stdio.h>
+#include <sstream>
+#include <boost/algorithm/string.hpp>
+#include <boost/algorithm/string/trim.hpp>
+#include <boost/algorithm/string/predicate.hpp>
+#include <vector>
 
 namespace osquery {
 namespace tables {
@@ -32,7 +40,7 @@ namespace tables {
 		}
 		pclose(pipe);
 
-		
+
 		std::stringstream ss(result);
 		std::string line;
 		while (std::getline(ss, line, '\n')) {
